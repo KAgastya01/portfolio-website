@@ -1,3 +1,51 @@
+/* Base Light Mode Variables */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #1a1a1a;
+  --text-muted: #666666;
+  --card-bg: #f8f9fa;
+  --accent-color: #0066cc;
+  --border-color: #e5e5e5;
+}
+
+/* Dark Mode Overrides */
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --text-muted: #a0a0a0;
+  --card-bg: #1e1e1e;
+  --accent-color: #4da6ff;
+  --border-color: #2d2d2d;
+}
+
+/* Apply variables to your global layout elements */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+}
+
+/* Style the theme toggle button subtly */
+.theme-toggle {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  color: var(--accent-color);
+}
 :root {
   --bg: #f6f2ec;
   --surface: #fffaf3;
