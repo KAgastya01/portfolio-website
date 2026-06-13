@@ -1,1 +1,1 @@
-My Portfolio/Resue website!
+My Portfolio/Resume website!
