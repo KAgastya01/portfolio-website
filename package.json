@@ -1,0 +1,11 @@
+{
+  "name": "kagastya01-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fetch-github": "node scripts/fetch-github.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
